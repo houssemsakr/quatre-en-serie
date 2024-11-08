@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="player2_name" type="id"/>
+    <item name="player2_score" type="id"/>
+    <item name="player2_hand" type="id"/>
+    <item name="game_board" type="id"/>
+    <item name="player1_hand" type="id"/>
+    <item name="player1_score" type="id"/>
+    <item name="player1_name" type="id"/>
+    <item name="leaveGameButton" type="id"/>
+    <item name="gameStatus" type="id"/>
+    <item name="gameTitle" type="id"/>
+    <item name="gameGrid" type="id"/>
+</resources>

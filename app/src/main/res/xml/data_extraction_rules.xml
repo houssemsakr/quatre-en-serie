@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Data extraction rules file for controlling backup and restore behavior.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for more information.
+-->
+<data-extraction-rules xmlns:tools="http://schemas.android.com/tools">
+    <cloud-backup>
+        <!-- Inclure les préférences partagées -->
+        <include domain="sharedpref" path="user_preferences.xml" />
+
+        <!-- Inclure des fichiers spécifiques dans le stockage privé -->
+        <include domain="file" path="important_data/" />
+
+        <!-- Exclure le cache pour économiser l’espace -->
+        <exclude domain="cache" />
+
+        <!-- Exclure une base de données temporaire qui ne nécessite pas de sauvegarde -->
+        <exclude domain="database" path="temp_data.db"
+            tools:ignore="FullBackupContent" />
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- Inclure tous les fichiers utilisateur pour le transfert entre appareils -->
+        <include domain="file" path="user_files/" />
+
+        <!-- Exclure les journaux pour éviter le transfert de données inutiles -->
+        <exclude domain="file" path="logs/"
+            tools:ignore="FullBackupContent" />
+    </device-transfer>
+</data-extraction-rules>

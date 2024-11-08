@@ -1,0 +1,18 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google() // Ajout du dépôt Google
+        mavenCentral() // Ajout du dépôt Maven Central
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.1' // Mettre à jour vers la dernière version stable
+        classpath 'com.google.gms:google-services:4.4.2' // Plugin Google Services
+    }
+}
+
+// Tâche pour nettoyer le répertoire de build
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

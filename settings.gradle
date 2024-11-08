@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral() // Utilisation de Maven Central à la place de JCenter
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral() // Utilisation de Maven Central à la place de JCenter
+        maven { url 'https://jitpack.io' } // Ajout de JitPack pour les dépendances tierces
+    }
+}
+
+rootProject.name = "mynewapp"
+include ':app'

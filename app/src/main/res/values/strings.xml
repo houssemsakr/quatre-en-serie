@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="page_name">Player Search</string>
+    <string name="register_button">Register</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="search_button">Search</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="back_button_description">Go Back</string>
+    <string name="search_button_description">Search for User</string>
+    <string name="remove_button">Remove</string>
+    <string name="accept_button">Accept</string>
+    <string name="logout_icon_description">Logout Icon</string>
+    <string name="remove_friend">Remove Friend</string>
+    <string name="back_button">Back Button</string>
+    <string name="vs_image">VS Image</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="create_online_game">Create Online Game</string>
+    <string name="join_online_game">Join Online Game</string>
+    <string name="error_empty_game_id">Please enter game ID</string>
+    <string name="leave_game_button">Leave Game</string>
+    <string name="game_status">Game Status</string>
+    <string name="game_title">Game Title</string>
+    <string name="game_grid">Game Grid</string>
+</resources>
